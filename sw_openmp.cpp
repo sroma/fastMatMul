@@ -113,7 +113,7 @@ void MatMulSV (unsigned n, T* A, unsigned ia, unsigned ja, unsigned sa,
         return;
     }
 
-    unsigned n2 = n >> 1; // n * n
+    unsigned n2 = n >> 1; // n / 2
 
     // use 8 additional buffers of size n * n / 4
     T *S1 = new T [2 * n * n];
