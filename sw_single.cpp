@@ -113,7 +113,7 @@ void MatMulSV (unsigned n, T* A, unsigned ia, unsigned ja, unsigned sa,
         return;
     }
 
-    unsigned n2 = n >> 1; // n * n
+    unsigned n2 = n >> 1; // n / 2
 
     // to store auxilary calculations only 4 marices of [n/2] x [n/2] need
     T *X = BUF;
